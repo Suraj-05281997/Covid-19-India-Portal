@@ -210,7 +210,7 @@ app.get(
   authenticateToken,
   async (request, response) => {
     const { stateId } = request.params;
-    const getStatsQuery = `
+    const getStateStatsQuery = `
     SELECT
         SUM(cases),
         SUM(cured),
